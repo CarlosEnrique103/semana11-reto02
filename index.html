@@ -1,11 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/to-do.png" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <title>todolist</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <a href="#">todoList</a>
+      <ul>
+        <li><i class="fa fa-calendar-check-o"></i>Complete</li>
+        <li><i class="fa fa-calendar-times-o"></i>Imcomplete</li>
+      </ul>
+    </nav>
+    <div class="app_todoList">
+      <div class="section_day">
+        <div class="section_day_header">
+          <a href="">Hoy</a>
+          <small>jue Mar 26</small>
+        </div>
+        <ul class="task">
+          <li class="items_task hidden ">
+            <div class="item_task">
+              <div>
+                <i class="fa fa-circle-o"></i><a href="">Planchar</a>
+              </div>
+              <div>
+                <i class="fa fa-trash-o"></i>
+              </div>
+            </div>
+          </li>
+          <li class="add_btn">
+            <a><i class="fa fa-plus"></i>Añadir tarea</a>
+          </li>
+          <li class="add_task_form hidden">
+            <form>
+              <div class="section_input">
+                <input
+                  type="text"
+                  placeholder="por ejemplo Aprender inglés 2 días."
+                  name="task"
+                  />
+                <input type="date" name="date"/>
+              </div>
+              <div class="btn_tasks">
+                <button class="btn_submit" type="submit">Añadir tarea</button>
+                <button class="btn_reset" type="reset">Cancelar</button>
+              </div>
+            </form>
+          </li>
+        </ul>
+      </div>
+      <div class="image_back">
+        <img src="./images/fondo.png" alt="Fondo de app" />
+        <h3>Disfruta de tu día.</h3>
+        <p>Hoy completaste 17 tareas y ¡alcanzaste #TodoistZero!</p>
+      </div>
+    </div>
+    <script src="./scripts/main.js"></script>
+  </body>
 </html>

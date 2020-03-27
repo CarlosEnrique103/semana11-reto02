@@ -1,5 +1,241 @@
-body {
+@import url("https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Baloo+2&display=swap");
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+* {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+nav {
+  background-color: #db4c3f;
+  padding: 5px 15px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav a {
+  color: white;
+  font-size: 40px;
+  font-family: "Shadows Into Light", cursive;
+  letter-spacing: 2px;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Baloo 2", cursive;
+}
+
+nav ul li {
+  margin-left: 15px;
+  padding: 5px;
+}
+
+nav ul li i {
+  margin-right: 3px;
+}
+
+nav ul li:hover {
+  color: black;
+  background-color: #f7f7f7;
+  opacity: 0.95;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.app_todoList {
+  background-color: #f7f7f7;
+  width: 90%;
+  height: 100vh;
+  margin: auto;
+  padding: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.app_todoList .section_day {
+  width: 100%;
+  margin: auto;
+}
+
+.app_todoList .section_day .section_day_header {
+  margin-bottom: 10px;
+}
+
+.app_todoList .section_day .section_day_header a {
+  font-size: 40px;
+}
+
+.app_todoList .section_day .section_day_header small {
+  color: #808080;
+}
+
+.app_todoList .section_day .task {
+  margin-top: 10px;
+}
+
+.app_todoList .section_day .task .item_task {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app_todoList .section_day .task .item_task i {
+  color: #808080;
+  font-size: 20px;
+}
+
+.app_todoList .section_day .task .item_task a {
+  margin-left: 10px;
+  font-weight: normal;
+}
+
+.app_todoList .section_day .task .add_btn {
+  margin-top: 10px;
+  cursor: pointer;
+  /*    border-top: 1px solid $colorBorder;
+        padding-top: 10px ; */
+}
+
+.app_todoList .section_day .task .add_btn a {
+  color: #808080;
+}
+
+.app_todoList .section_day .task .add_btn i {
+  color: #db4c3f;
+  font-family: 18px;
+  margin-right: 10px;
+  padding: 5px;
+}
+
+.app_todoList .section_day .task .add_btn:hover > a i {
+  background-color: #db4c3f;
+  color: white;
+  border-radius: 20px;
+}
+
+.app_todoList .section_day .task .add_btn:hover > a {
+  color: #db4c3f;
+}
+
+.app_todoList .section_day .task .add_task_form .section_input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+}
+
+.app_todoList .section_day .task .add_task_form .section_input input {
+  padding: 10px;
+  font-family: "Baloo 2", cursive;
+  font-size: 15px;
+  border: 1px solid #cecbcb;
+}
+
+.app_todoList .section_day .task .add_task_form .section_input input:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+}
+
+.app_todoList .section_day .task .add_task_form .section_input input:focus::-webkit-input-placeholder {
+  color: black;
+}
+
+.app_todoList .section_day .task .add_task_form .section_input input:focus:-ms-input-placeholder {
+  color: black;
+}
+
+.app_todoList .section_day .task .add_task_form .section_input input:focus::-ms-input-placeholder {
+  color: black;
+}
+
+.app_todoList .section_day .task .add_task_form .section_input input:focus::placeholder {
+  color: black;
+}
+
+.app_todoList .section_day .task .add_task_form .section_input input[name=task] {
+  width: 70%;
+  border-radius: 5px 0 0 5px;
+  border-right: none;
+}
+
+.app_todoList .section_day .task .add_task_form .section_input input[name=date] {
+  width: 30%;
+  border-radius: 0 5px 5px 0;
+}
+
+.app_todoList .section_day .task .add_task_form .btn_tasks {
+  margin-top: 10px;
+}
+
+.app_todoList .section_day .task .add_task_form .btn_tasks button {
+  padding: 10px;
+  width: 100px;
+}
+
+.app_todoList .section_day .task .add_task_form .btn_tasks button:focus {
+  border: none;
+  outline: none;
+}
+
+.app_todoList .section_day .task .add_task_form .btn_tasks .btn_submit {
+  background: #f3c8c5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.app_todoList .section_day .task .add_task_form .btn_tasks .btn_reset {
+  background: none;
+  border: none;
+  width: 70px;
+}
+
+.app_todoList .section_day .task .add_task_form .btn_tasks .btn_reset:hover {
+  text-decoration: underline;
+}
+
+.app_todoList .image_back {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 10px;
+  color: #808080;
+}
+
+.app_todoList .image_back h3 {
+  color: #353434;
+}
+
+.app_todoList .image_back img {
+  width: 200px;
 }
 /*# sourceMappingURL=main.css.map */
