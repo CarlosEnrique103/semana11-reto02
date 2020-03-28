@@ -13,13 +13,14 @@
   </head>
   <body>
     <nav>
-      <a href="#">todoList</a>
+      <a href="index.html">todoList</a>
       <ul>
-        <li><i class="fa fa-calendar-check-o"></i>Complete</li>
-        <li><i class="fa fa-calendar-times-o"></i>Imcomplete</li>
+        <li class="btn_complete"><i class="fa fa-calendar-check-o"></i>Complete</li>
+        <li class="btn_incomplete"><i class="fa fa-calendar-times-o"></i>Incomplete</li>
       </ul>
     </nav>
     <div class="app_todoList">
+      
       <div class="section_day">
         <div class="section_day_header">
           <a href="">Hoy</a>
@@ -27,7 +28,6 @@
         </div>
         <ul class="task">
           <ul class="item_tasks">
-
           </ul>
           <li class="add_btn">
             <a><i class="fa fa-plus"></i>Añadir tarea</a>
@@ -50,10 +50,17 @@
           </li>
         </ul>
       </div>
+      <div class="section_complete">
+        <h1>Tareas Completadas</h1>
+        <ul class="task">
+          <ul class="item_tasks">
+          </ul>
+        </ul>
+      </div>
       <div class="image_back">
         <img src="./images/fondo.png" alt="Fondo de app" />
         <h3>Disfruta de tu día.</h3>
-        <p>Hoy completaste 17 tareas y ¡alcanzaste #TodoistZero!</p>
+        <p>¡alcanzaste #TodoListZero!</p>
       </div>
     </div>
     <script src="./scripts/main.js"></script>
